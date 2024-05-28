@@ -151,6 +151,7 @@ p{
         flex-direction: column;
         gap: 15px;
         width: 80%;
+        padding: 10px;
     }
     .LoginSection h1{
         font-size: 18px;
@@ -166,6 +167,7 @@ p{
     }
     .login-form{
         width: 100%;
+        padding: 20px;
     }
     .LoginSection h1{
         font-size: 18px;
