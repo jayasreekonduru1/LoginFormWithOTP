@@ -15,7 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 0px 30px;
     margin-top: 40px;
     gap:20px;
 }
@@ -144,7 +144,7 @@ p{
     .container{
         display: flex;
         flex-direction: column;
-        
+        padding: 0px 10px;
     }
     .login-form{
         display: flex;
@@ -163,7 +163,7 @@ p{
     .container{
         display: flex;
         flex-direction: column;
-        
+        padding: 0px 10px;
     }
     .login-form{
         width: 100%;
