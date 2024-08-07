@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Major+Mono+Display&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #f4f4f4; */
+    /* margin: 0; */
+    height:100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #000;
+    color: #fff;
+    height: 10vh;
+}
+
+.brand-name {
+    flex: 1;
+}
+.brand-name h1{
+    padding-left: 10px;
+}
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#usernameDisplay {
+    margin-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.dropdown-content button:hover {
+    background-color: #d32f2f;
+}
+select{
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* Show dropdown when profile image is clicked */
+.profile-container.show .dropdown-content {
+    display: block;
+}
+
+#userDetails {
+    margin-top: 20px;
+    text-align: left;
+}
+main{
+    width: 100vw;
+    display: flex;
+    height: 80vh;
+}
+.imageContainer{
+    background-color: #4373a3;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageContainer .blueshade1{
+    padding: 20px;
+    background-color: #4373a3;
+    border-radius: 50%;
+}
+.imageContainer .blueshade2{
+    padding: 20px;
+    background-color: #4373a3;
+    border-radius: 50%;
+}
+.imageContainer .whitecircle{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 150px;
+}
+.imageContainer .blueshade1:hover {
+    background-color: #4e84bb;
+    transition: 0.5s ease-in-out;
+}
+.imageContainer .blueshade2:hover {
+    background-color: #5d9ede;
+    transition: 0.5s ease-in-out;
+}
+.imageContainer .whitecircle:hover{
+    border: 10px solid #fff;
+    transition: 0.5s ease-in-out;
+}
+.likeImage{
+    width: 110px;
+   
+    /* border-radius: 50%; */
+    padding: 20px;
+}
+.sideContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sideContainer h1{
+    font-size: 47px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+.sideContainer h4{
+    /* font-size: 44px; */
+    color: #333;
+    font-weight: 500;
+}
+footer{
+    background-color: #333;
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 485px){
+    .likeImage{
+        width: 60px;
+        padding: 20px;
+    }
+    .imageContainer .whitecircle{
+        border-radius: 50%;
+        border: 2px solid #fff;
+        width: 100px;
+    }
+    .sideContainer h1{
+        font-size: 34px;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+        font-size: 12px;
+    }
+    .imageContainer .blueshade1{
+        padding: 10px;
+    }
+    .imageContainer .blueshade2{
+        padding: 8px; 
+    }
+    .imageContainer .whitecircle{
+        border-radius: 50%;
+        border: 2px solid #fff; 
+        padding: 5px;  
+    }
+    .imageContainer{
+        background-color: #fff; 
+    }
+    .imageContainer .blueshade1{
+        background-color: #fff;
+    }
+    .imageContainer .blueshade2{
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .likeImage{
+        width: 45px;
+        padding: 20px;
+    }
+    .imageContainer .whitecircle{
+        border-radius: 50%;
+        border: 2px solid #fff;
+        width: 80px;
+    }
+    .sideContainer h1{
+        font-size: 34px;
+        text-align: center;
+    }
+    .sideContainer{
+        padding-right: 20px;
+    }
+    footer{
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    
+}

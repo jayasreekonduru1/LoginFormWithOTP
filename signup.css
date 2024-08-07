@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    /* background-color: #dddee1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-image: url('./assets/bluestripes.jpg');
+}
+form{
+    display: flex;
+    margin-top: 20px;
+}
+form section{
+    padding: 20px;
+    /* border: 2px solid #000; */
+    width: 480px;
+    background-color: #fff;
+}
+.second-section{
+    background-color: #4373a3;
+}
+.error { color: red; font-size: 14px; }
+.form-group { margin-bottom: 10px; }
+form .form-group{
+    /* border: 2px solid #000; */
+    padding: 5px 10px 4px 10px;
+}
+.error{
+    visibility: visible;
+    height: 12px;
+}
+
+@media screen and (max-width: 1024px){
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .second-section{
+        background-color: #fff;
+    }
+    .btn{
+        background-color: #4373a3;
+        color: #fff;
+    }
+}
+@media screen and (max-width: 500px){
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    form section{
+    padding: 20px;
+    /* border: 2px solid #000; */
+    width: 380px;
+    background-color: #fff;
+}
+    /* .second-section{
+        background-color: #fff;
+    }
+    .btn{
+        background-color: #4373a3;
+        color: #fff;
+    } */
+}
+@media screen and (max-width: 400px){
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    form section{
+    padding: 20px;
+    /* border: 2px solid #000; */
+    width: 300px;
+    background-color: #fff;
+}
+    /* .second-section{
+        background-color: #fff;
+    }
+    .btn{
+        background-color: #4373a3;
+        color: #fff;
+    } */
+}

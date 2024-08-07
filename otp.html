@@ -4,68 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-        }
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #413f3f;
-            font-weight: 500;
-        }
-        .container{
-            width: 400px;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;  
-            border: 2px dashed #666161;
-            
-        }
-        Button{
-            padding: 10px;
-            background-color: #4373a3;
-            font-size: 15px;
-            border:none;
-            color: #fff;
-        }
-        input{
-            padding: 10px;
-            font-size: 16px;
-            border: 2px solid #666161;
-        }
-        h1{
-            font-weight: 500;
-        }
-        h4{
-            font-weight: 500;
-        }
-        @media screen and (max-width: 400px){
-            h1{
-                font-size: 22px;
-            }
-            .container{ 
-                border: none;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="./otp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-            <h1>Please enter your OTP</h1>
-            <button id="otp" >Click to generate OTP</button>
-            
-            <h4>Enter Your OTP here...</h4>
-            <input type="text" id="input"/> 
+        
+        <header>
+            <i class="bx bxs-check-shield"></i>
+        </header>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+        <div class="toast-container position-fixed top-0 center-0 p-3 ">
+            <div id="liveToast" class="toast text-bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header text-bg-light">
+                <i class="fa-solid fa-lock fa-xl"></i>
+                <strong class="me-auto p-2">OTP</strong>
+                <!-- <small>11 mins ago</small> -->
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body text-center fs-3" id="toast-body">
+                Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
+        <h4>Enter OTP Code</h4>
+        <form id="otpForm" action="">
+            <div class="input-field">
+                <input type="number" id="otp1">
+                <input type="number" id="otp2" disabled>
+                <input type="number" id="otp3" disabled>
+                <input type="number" id="otp4" disabled>
+            </div>
+            <button type="button" id="verifyOtpBtn">Verify OTP</button>
+        </form>
     </div>
     <script src="./otp.js"></script>
 </body>

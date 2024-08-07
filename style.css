@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .container{
     display: flex;
@@ -38,6 +39,13 @@ body{
     font-weight: 500;
     padding: 16px;
 }
+h4{
+    color: #413f3f;
+    font-weight: 500;
+    padding: 16px;
+    text-align: center;
+}
+
 .email{
     padding: 10px;
     font-size: 18px;
@@ -71,6 +79,7 @@ body{
 }
 #icon{
     padding: 5px;
+    padding-right: 17px;
 }
 .toggle{
     background-color: #fff;
@@ -86,9 +95,14 @@ body{
 .loginButton:hover{
     background-color: #000;
 }
-/* .email{
-    margin-bottom: 0px;
-} */
+.googleButton{
+    padding: 8px;
+    font-size: 18px;
+    border: 2px solid #666161;
+    background-color: #ffffff;
+    color: #413f3f;
+    width: 100%;
+}
 small{
     color: red;
     
@@ -96,6 +110,9 @@ small{
 }
 p{
     color: red;
+}
+.error{
+    text-align: center;
 }
 /* #togglePassword{
     position: absolute;
@@ -110,25 +127,24 @@ p{
     }
 } */
 
-@media screen and (min-width:851px) and (max-width: 1200px){
-    .container{
-        
+@media screen and (min-width:951px) and (max-width: 1300px){
+    /* .container{
         margin-top: 140px;
-    }
-    .img-container{
+    } */
+    /* .img-container{
         width: 80%;
-        /* height: 300px; */
-    }
+        height: 300px; 
+    } */
     .login-form{
         display: flex;
         flex-direction: column;
         gap: 15px;
-        width: 60%;
+        width: 70%;
     }
     
 }
 
-@media screen and (min-width:651px) and (max-width: 850px){
+@media screen and (min-width:651px) and (max-width: 950px){
     .img-container{
         width: 70%;
         /* height: 300px; */
